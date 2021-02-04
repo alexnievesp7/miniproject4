@@ -16,9 +16,6 @@ class Main {
     System.out.println("Your favorite class is" + favoriteClass + "and " + teacherclass + "teaches that class.");
   
   }
-  static int (int birthYear, int currentYear)
-  {
-    int age = currentYear - birthYear;
-    return age; 
-  }
+  
+  
 }
