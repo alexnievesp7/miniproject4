@@ -4,7 +4,7 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-
+    //asking user for input
     System.out.println("What is your name?");
     String name = scan.next();
     System.out.println("What is your favorite class?");
@@ -16,7 +16,7 @@ class Main {
     System.out.println("How many elearners are there in your class?");
     int elearners = scan.nextInt();
     System.out.println("Number of students in class are " + inClass(students, elearners));
-  
+    //taking input and from methods and printing statement
   }
 
 
@@ -31,10 +31,10 @@ class Main {
       return 0;
     }
   }
-
+    //returning input from the method
   static int inClass(int students, int elearners)
   {
     return students - elearners; 
   }
-
+    //returning number of elearners
 }
