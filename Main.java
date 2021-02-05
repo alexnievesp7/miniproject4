@@ -11,17 +11,30 @@ class Main {
     String favoriteClass = scan.next();
     System.out.println("Who is the teacher of that class?");
     String teacherClass = scan.next();
+    System.out.println("How many people are in your period " + periodClass(favoriteClass, teacherClass));
+    int students = scan.nextInt();
+    System.out.println("How many elearners are there in your class?");
+    int elearners = scan.nextInt();
+    System.out.println("Number of students in class are " + inClass(students, elearners));
+  
   }
 
+
+
   static int periodClass(String favoriteClass, String teacherClass) {
-    System.out.println("Your favorite class is" + favoriteClass + "and " + teacherClass + "teaches that class.");
-    if (favoriteClass == "art" && teacherClass == "Flavio") {
+    System.out.println("Your favorite class is " + favoriteClass + " and " + teacherClass + " teaches that class.");
+    if (favoriteClass.equals("art") && teacherClass.equals("Flavio")) {
       return 5;
-    }else if (favoriteClass == "programming" && teacherClass == "Gaber") {
+    } else if (favoriteClass.equals("programming") && teacherClass.equals( "Gaber")) {
       return 7;
     } else {
       return 0;
     }
+  }
+
+  static int inClass(int students, int elearners)
+  {
+    return students - elearners; 
   }
 
 }
